@@ -1,46 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="un_verify" content="2057e375494b39980b98ee96cd8a9717">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>chenyi</title>
+    <style>
+        .floating-ad {
+            position: fixed !important;
+            top: 50% !important;
+            left: 50% !important;
+            transform: translate(-50%, -50%) !important;
+            z-index: 9999 !important;
+            width: 100% !important;
+            height: auto !important;
+            background: rgba(255,255,255,0.1);
+        }
+    </style>
 </head>
 <body>
-    <!-- 第一个固定CPC广告 -->
+    <!-- 顶部广告 -->
     <div id="ad1" class="floating-ad">
         <script>
-    (function () {
-        var id = "7255774253627174051-13427";
-        document.write('<ins style="display:none!important" id="' + id + '"></ins>');
-        (window.adbyunion = window.adbyunion || []).push(id);
-    })();
-</script>
-<script async src="https://js.ffff241201.cc/o.js"></script>
-    
-    </div>
-    
-            <script>
-    (function () {
-        var id = "8454121508172743258-1002";
-        document.write('<ins style="display:none!important" id="' + id + '"></ins>');
-        (window.adbyunion = window.adbyunion || []).push(id);
-    })();
-            </script>
-            <script async src="https://jx.nvdfpoic25.cn/o.js"></script>
-    
-
-    <!-- 第二个固定CPC广告 -->
-    <div id="ad2" class="floating-ad">
-        <script>
-    (function () {
-        var id = "7255774253627174051-13426";
-        document.write('<ins style="display:none!important" id="' + id + '"></ins>');
-        (window.adbyunion = window.adbyunion || []).push(id);
-    })();
+            (function () {
+                var id = "7255774253627174051-13427";
+                document.write('<ins style="display:none!important" id="' + id + '"></ins>');
+                (window.adbyunion = window.adbyunion || []).push(id);
+            })();
         </script>
         <script async src="https://js.ffff241201.cc/o.js"></script>
-        
+    </div>
+
+    <!-- 中间横幅广告 -->
+    <div id="ad3" class="floating-ad">
+        <script>
+            (function () {
+                var id = "7255774253627174051-13426"; // 确认ID正确
+                document.write('<ins style="display:none!important" id="' + id + '"></ins>');
+                (window.adbyunion = window.adbyunion || []).push(id);
+            })();
+        </script>
+        <script defer src="https://jx.nvdfpoic25.cn/o.js"></script> <!-- 改为defer -->
+    </div>
+
+    <!-- 底部广告 -->
+    <div id="ad2" class="floating-ad">
+        <script>
+            (function () {
+                var id = "7255774253627174051-13426";
+                document.write('<ins style="display:none!important" id="' + id + '"></ins>');
+                (window.adbyunion = window.adbyunion || []).push(id);
+            })();
+        </script>
+        <script async src="https://js.ffff241201.cc/o.js"></script>
     </div>
 </body>
-</html>  
+</html>
