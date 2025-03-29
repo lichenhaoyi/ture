@@ -1,24 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>chenyi</title>
     <style>
-        .floating-ad {
-            position: fixed !important;
-            top: 50% !important;
-            left: 50% !important;
-            transform: translate(-50%, -50%) !important;
-            z-index: 9999 !important;
-            width: 100% !important;
-            height: auto !important;
-            background: rgba(255,255,255,0.1);
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 80px 0 60px; /* 预留广告位空间 */
+        }
+
+        /* 广告容器基础样式 */
+        .ad-container {
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            background: transparent;
+            overflow: hidden;
+        }
+        #top-ad {
+            top: 0;
+            height: 60px; /* 匹配常见顶部广告高度 */
+        }
+        #bottom-ad {
+            bottom: 0;
+            height: 50px; /* 匹配常见底部广告高度 */
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 30px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
     </style>
 </head>
 <body>
-    <!-- 顶部广告 -->
-    <div id="ad1" class="floating-ad">
+    <!-- 顶部广告容器 -->
+    <div id="top-ad" class="ad-container">
         <script>
             (function () {
                 var id = "7255774253627174051-13427";
@@ -29,20 +51,27 @@
         <script async src="https://js.ffff241201.cc/o.js"></script>
     </div>
 
-    <!-- 中间横幅广告 -->
-    <div id="ad3" class="floating-ad">
+    <div class="content">
+        <h1 style="color:#ff4444;text-align:center">有需求请联系客服</h1>
+        <p style="text-align:center;font-size:18px;color:#333">
+            因安全原因，网站即日起暂停服务<br>
+            换群及求资源请联系：<strong>3882127483</strong>
+        </p>
+        
+        <!-- 主广告位 -->
+    <div style="margin:30px auto;width:728px;height:90px">
         <script>
             (function () {
-                var id = "7255774253627174051-13426"; // 确认ID正确
+                var id = "8454121508172743258-1002";
                 document.write('<ins style="display:none!important" id="' + id + '"></ins>');
                 (window.adbyunion = window.adbyunion || []).push(id);
             })();
         </script>
-        <script defer src="https://jx.nvdfpoic25.cn/o.js"></script> <!-- 改为defer -->
+        <script async src="https://jx.nvdfpoic25.cn/o.js"></script>
     </div>
 
-    <!-- 底部广告 -->
-    <div id="ad2" class="floating-ad">
+    <!-- 底部广告容器 -->
+    <div id="bottom-ad" class="ad-container">
         <script>
             (function () {
                 var id = "7255774253627174051-13426";
